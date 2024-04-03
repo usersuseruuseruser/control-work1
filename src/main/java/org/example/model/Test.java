@@ -5,7 +5,7 @@ import javax.persistence.OneToMany;
 import java.util.List;
 
 @Entity
-@javax.persistence.Table(name = "tests")
+@javax.persistence.Table(name = "test")
 public class Test {
     @javax.persistence.Id
     @javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.IDENTITY)

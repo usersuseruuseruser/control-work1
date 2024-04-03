@@ -42,7 +42,7 @@ public class TestsController {
         return "testPage";
     }
 
-    @GetMapping("/tests")
+    @GetMapping("/test")
     public String getAllTests(Model model) {
         List<Test> tests = testRepository.findAll();
         model.addAttribute("tests", tests);

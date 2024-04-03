@@ -19,7 +19,7 @@ public class PersonalAccountController {
     public PersonalAccountController(UserService userService) {
         this.userService = userService;
     }
-    @GetMapping
+    @GetMapping("/users")
     public String getAllUsers(Model model) {
         List<UserDto> listUserDto = userService.getAll();
         model.addAttribute("users", listUserDto);
