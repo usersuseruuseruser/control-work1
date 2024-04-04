@@ -33,6 +33,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
     public FreeMarkerConfigurer freeMarkerConfigurer() {
         FreeMarkerConfigurer configurer = new FreeMarkerConfigurer();
         configurer.setTemplateLoaderPath("/templates/");
+        configurer.setDefaultEncoding("UTF-8");
         return configurer;
     }
 
